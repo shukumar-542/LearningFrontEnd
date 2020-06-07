@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .box {
+            display: none;
+            color: white;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+        }
+
+        @media only screen and (max-width: 300px) {
+            #box-1 {
+                display: block;
+                background-color: teal;
+
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color: yellow;
+                color: black;
+
+            }
+        }
+
+        @media only screen and (min-width: 500px) and (max-width: 800px) {
+            #box-3 {
+                display: block;
+                background-color: green;
+                color: red;
+                font-weight: bold;
+                /* font-style: italic; */
+
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            #box-4 {
+                display: block;
+                background-color: blue;
+                /* color: white; */
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">This is IPhone</div>
+    <div class="box" id="box-2">This is Tablet</div>
+    <div class="box" id="box-3">This is Laptop</div>
+    <div class="box" id="box-4">This is Monitor</div>
+</body>
+
+</html>

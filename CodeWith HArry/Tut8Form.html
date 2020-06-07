@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>This is my Form</h1>
+    <form action="backend.php">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="roll">Roll</label>
+            <input type="number" name="myRoll" id="roll">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+
+        <br>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="check">Are you 18+</label>
+            <input type="checkbox" name="myCheck" id="check" checked>
+
+        </div>
+        <br>
+        <div>
+            <label for="gander">Gander</label>
+            Male: <input type="radio" name="myGander" id="gander">
+            Female: <input type="radio" name="myGander" id="gander">
+            Other: <input type="radio" name="myGander" id="gander">
+        </div>
+        <br>
+        <div>
+            <label for="about">Write about yourself</label>
+            <textarea name="myabout" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="select">Car</label>
+            <select name="myCar" id="select">
+                <option value="lambo" selected>Lemborgini</option>
+                <option value="Buga">Bugatti</option>
+
+            </select>
+
+        </div>
+        <br>
+        <div><input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

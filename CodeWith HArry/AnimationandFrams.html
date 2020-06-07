@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations & Keyframes</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            margin: 0px;
+            padding: 0px;
+            background-color: chartreuse;
+        }
+
+        .box {
+            background-color: darkcyan;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /* animation-name: Dipu1; */
+            animation-name: Dipu;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            /* animation: harry 5s ease-in 1s 12 backwards; */
+
+        }
+
+        @keyframes Dipu {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 250px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 250px;
+                left: 0px;
+            }
+        }
+
+        @keyframes Dipu1 {
+            from {
+                width: 250px;
+            }
+
+            to {
+                width: 1400px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>This is a box brother</h3>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+    /* justify-content: center; */
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+        }
+#logo{
+    margin: 15px 34px;
+}
+#navbar img{
+    height: 32px;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    list-style: none;
+   
+    
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* background-color: teal; */
+    margin: 0px 2px;
+
+    
+}
+#navbar ul li a:hover{
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    /* background-color: tomato; */
+    color: lime;
+
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    height: 582px;
+    color: white;
+
+}
+#home::before{
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.7;
+    height: 642px;
+    width: 100%;
+}
+.h-primary{
+padding: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 45px;
+}
+#home p{
+    color: whitesmoke;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+/* Services Section */
+#service{
+    display: flex;
+    margin: 34px;
+}
+#service .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#service .box {
+    /* display: flex; */
+    /* flex-direction: umn; */
+    border: 2px solid green;
+    height: 300px;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+
+}
+/* ClientSection */
+
+/* #our-clients{
+    position: relative;
+} */
+#clients::before{
+    content: "";
+    background: url("../bg.jpg") ;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    height: 200px;
+    width: 100%;    
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    position: relative;
+}
+#clients .items{
+    padding: 10px 10px;
+    margin: 38px  10px;
+}
+#clients .items img{
+    height: 100px;
+}
+/* Contact */
+#Contact{
+    position: relative;
+}
+#Contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+
+width: 100%;
+padding: 0.5rem;
+
+    
+}
+#contact-box input{
+    border-radius: 10px;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* Utility Class */
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #ff9900;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}

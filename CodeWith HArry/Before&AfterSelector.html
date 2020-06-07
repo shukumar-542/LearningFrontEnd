@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and afrer</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header::before {
+            background: url('https://i.pinimg.com/originals/87/8a/69/878a69b5e2960a3dd780f18e0958173b.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+
+
+        }
+
+        .navbar {
+            font-size: 20px;
+
+        }
+
+        .navigation-bar {
+            font-family: 'Bree Serif', serif;
+            display: flex;
+            list-style: none;
+            margin: 30px 30px;
+
+
+        }
+
+        .navigation-bar li {
+            padding: 0px 30px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 20px;
+            /* border: 2px solid tomato; */
+            padding: 10px;
+            height: 400px;
+            justify-content: center;
+
+        }
+
+        .section h3 {
+            font-family: 'Bree Serif', serif;
+            font-size: 4rem;
+        }
+
+        .section p {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: teal;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="contain">
+        <header>
+            <nav class="navbar">
+                <ul class="navigation-bar">
+
+                    <li><a href="#">Home</a></li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Our Work</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="section">
+            <h3>This is a header</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro soluta quod, facilis deserunt dolores
+                inventore repellat quam illo laborum voluptas eos quia modi, aliquam neque provident ipsa distinctio
+                nihil saepe enim! Velit delectus architecto unde tenetur eligendi, explicabo placeat voluptatum!</p>
+        </section>
+        <hr>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITIONING</title>
+    <style>
+        /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+        /* position: relative; */
+
+        /* absolute: Positions the element relative to the positon of its first parent*/
+        /* position: absolute; */
+
+        /* top: 34px;
+        left: 134px; */
+
+        /* fixed: Positions the element relative to the browser window; */
+        /* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+        /* sticky: Positions the element relative to the users scroll position */
+        .rcontainer {
+            background-color: blanchedalmond;
+            border: 2px solid red;
+        }
+
+
+
+        .box {
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 3px solid blue;
+            margin: 3px;
+
+        }
+
+        #rbox3 {
+            position: relative;
+            top: 5px;
+            left: 20px;
+        }
+
+        .acontainer {
+            margin-top: 5px;
+            background-color: #2be2af;
+            border: 2px solid red;
+        }
+
+        #abox3 {
+            background-color: #2be2af;
+            position: absolute;
+            top: 5px;
+            left: 20px;
+        }
+
+        .fcontainer {
+            margin-top: 5px;
+            background-color: #2b8ee2;
+            border: 2px solid red;
+            height: 1000px;
+        }
+
+        #fbox3 {
+            background-color: #2b8ee2;
+            position: fixed;
+            right: 2px;
+            bottom: 2px;
+        }
+
+        .scontainer {
+            margin-top: 5px;
+            background-color: #e2662b8c;
+            border: 2px solid red;
+            height: 1000px;
+        }
+
+        #sbox3 {
+            background-color: #e2662b8c;
+            position: fixed;
+            top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="rcontainer">
+        <div class="box" id="rbox1">1</div>
+        <div class="box" id="rbox2">2</div>
+        <div class="box" id="rbox3">relative</div>
+        <div class="box" id="rbox4">4</div>
+
+    </div>
+    <div class="acontainer">
+        <div class="box" id="abox1">1</div>
+        <div class="box" id="abox2">2</div>
+        <div class="box" id="abox3">absolute</div>
+        <div class="box" id="abox4">4</div>
+
+    </div>
+    <div class="fcontainer">
+        <div class="box" id="fbox2">2</div>
+        <div class="box" id="fbox1">1</div>
+        <div class="box" id="fbox3">fixed</div>
+        <div class="box" id="fbox4">4</div>
+
+    </div>
+    <div class="scontainer">
+        <div class="box" id="sbox1">1</div>
+        <div class="box" id="sbox2">2</div>
+        <div class="box" id="sbox3">sticky</div>
+        <div class="box" id="sbox4">4</div>
+
+    </div>
+
+</body>
+
+</html>
